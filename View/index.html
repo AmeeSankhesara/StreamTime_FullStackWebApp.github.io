@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>
+      Main Page
+    </title>
+  </head>
+    <style>
+
+.container{
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid black;
+}
+
+.bgimage {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  right: 0%;
+  background-image: url(curtain.jpg);
+  background-size: 100%;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: 5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: #F9DBBD;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family:cursive;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #F9DBBD;
+  padding: 7px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 black, 1px 2px 0 black, 1px 3px 0 black, 1px 4px 0 black;
+}
+
+.text:hover {
+  transition: 0.3s;
+  color:  #F9DBBD;
+  text-decoration: none;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 black, 
+              1px -2px 0 black, 
+              1px -3px 0 black,
+              1px -8px 0 black, 
+              5px -13px 15px black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="bgimage.jpg"  alt="screen" class="bgimage">
+  <div class="overlay">
+  <a href= "movieSearch.html"  class="text"> Stream Time</a>
+  </div>
+</div>
+ 
+</body>
+</html>

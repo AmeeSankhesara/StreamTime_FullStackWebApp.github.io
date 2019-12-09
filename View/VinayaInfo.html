@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head> 
+        <meta http-equiv="Content-Type"content="text/html; charset=UTF-8"/>
+        <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=0"/>
+        <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+        <style type="text/css">
+        .heading
+        {
+            font-size: 6vh;
+            font-family: cursive;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 5%;
+            font-weight:bold;
+        }
+
+        .navbar_styling {
+            background: #450920;
+        }
+
+        .navbar-toggler-icon {
+            background: #F9DBBD;
+        }
+
+        .navbar-collapse .navbar-nav .nav-item .nav-link {
+            color: #F9DBBD;
+        }
+
+       
+        .nav-link:hover, .nav-link:focus {
+            text-decoration: none;
+            transition: 0.2s;
+            color:  #F9DBBD;
+            text-decoration: none;
+            transform: scale(1.1)translate(-1%, -1%);
+            text-shadow: 1px -1px 0 black, 1px -2px 0 black, 
+            1px -3px 0 black,
+                1px -8px 0 black, 
+                5px -13px 15px black;
+            }
+
+        .navbar-brand {
+            color: #F9DBBD;
+            font-size: large;
+            font-family: cursive;
+        }
+        .navbar-brand:hover, .navbar-brand:focus {
+            text-decoration: none;
+            color: #F9DBBD;
+            transition: 0.2s;
+            color:  #F9DBBD;
+            text-decoration: none;
+            transform: scale(1.1)translate(-1%, -1%);
+            text-shadow: 1px -1px 0 black, 1px -2px 0 black, 
+            1px -3px 0 black,
+                1px -8px 0 black, 
+                5px -13px 15px black;
+            }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        .navbar-toggler {
+            border-color: #F9DBBD;
+        }
+
+         .margin
+          {
+            margin-left: 4%;
+            margin-right: 4%;
+            justify-content: center;
+            margin-top: 1%;
+            margin-bottom: 1%;
+          }
+
+            .footer
+            {    
+              bottom: 0;
+              width: 100%;
+              background-color:  #450920;
+              color: #F9DBBD;
+              text-align: center;
+              margin-top: 5%
+            }
+
+            .form
+            {
+              margin-top: 1%; 
+              margin-left:5%;
+              margin-right:5%;
+              text-align: center;
+              color: #F9DBBD;
+            }
+
+             .form-control
+            {
+                width: 23%;
+                margin-left: 38.5%;
+                margin-right: 38.5%; 
+            }      
+
+            .jumbotron 
+            {
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 4%;
+                margin-bottom: 2%;
+                color: #F9DBBD;
+            }
+
+            .background
+            {
+                background-color:#F9DBBD;
+            }
+
+            .background-clr
+            {
+                background-color:#450920;
+            }
+            
+            .header
+            { 
+                text-align: center;
+                font-size: 15pt;
+            }
+
+            .row-margin
+            {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .font-margin
+            {
+                font-size: 16pt;
+                margin-top:2%;
+            }
+            #TopBtn {
+            display: none;
+            position: fixed;
+            border: none;
+            outline: none;
+            padding: 10px;
+            bottom: 22px;
+            right: 28px;
+            z-index: 99;
+            color: white;
+            cursor: pointer;   
+            border-radius: 50px;
+            background-color: #450920;
+            font-size: 15px;
+        }
+
+        #TopBtn:hover {
+        background-color: #a54a6d;
+        transform: scale(1.1)translate(-1%, -1%);
+        }
+
+           
+
+        </style>
+        
+</head>
+<body class="background"> 
+        <nav class="navbar navbar-expand-sm navbar_styling">
+                <a class="navbar-brand" href="index.html">StreamTime</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto content_styling">
+                        <li class="nav-item">
+                            <a class="nav-link" href="movieSearch.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nowplaying.html">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="latest.html">Upcoming</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>               
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    <div class="heading">Vinaya Bhat</div>
+    <div class="jumbotron background">
+        <div class="row row-margin">
+            <div class="col-sm-4">
+                    <img src="Vinaya.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-sm-8 background-clr">
+                    <p class="font-margin"><strong>About Me...</strong></p>
+                    <p>Currently pursuing Masters in Computer Sciene at Portland State University. 
+                        Previously worked as a Senior Engineer at Nokia OSS R&D for 2 years.
+                        Designing and developing software by thinking "out of the box" solutions to problems.
+                        Strong troubleshooting and problem solving skills with an analytical mindset.
+                        Team Player with a can-do attitude.
+                    </p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="jumbotron background-clr">
+                    <div>
+                            <header class="header"><strong>EDUCATION</strong></header> 
+                    </div>
+                <div>
+                        <p class="margin">
+                                <ul style="list-style-type:disc;">
+                                    <li>
+                                        <strong>Master of Science – Computer Science<br>Portland State University
+                                        </strong>
+                                        <br>
+                                        Expected Graduation: December 2020
+                                        <br>
+                                        Relevant coursework: Algorithms Design and Analysis, Programming Languages, Operating Systems, Introduction to Database Management Systems, Database Management System Implementation, Cloud and Cluster Data Management, Artificial Intelligence, Machine Learning, Full Stack Web Development, Site Reliability Engineering, Introduction to Human Computer Interaction.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Bachelor of Engineering – Electronics and Communication Engineering <br>
+                                            BMS Institute of Technology and Management
+                                        </strong>
+                                        <br>
+                                        August 2012 - June 2016
+
+                                    </li>
+                                    </ul>
+                            
+                </div>
+            </div>
+  
+            <div class="jumbotron background-clr">
+                    <div>
+                            <header class="header"><strong>EMPLOYMENT</strong></header>
+                    </div>
+                <div>
+                        <p class="margin">
+                            <strong>Senior Engineer at Nokia</strong><br>July 2016 - April 2018<br>
+
+                            <ul style="list-style-type:disc;">
+                                    <li>Being a part of the R&D team worked on two projects related to the telecommunication network manager.</li>
+                                    <li>Designed and developed rules for processing alarms from various network domains.</li>
+                                    <li>Developed an Apache Kafka interface between two products.</li>
+                                    <li>Was successful in processing multiple network alarms in parallel.</li>
+                                    <li>Worked on OS and application monitoring software such as Zabbix.</li>
+                                  </ul>  
+                            </p>
+                </div>
+            </div>
+
+            <div class="jumbotron background-clr">
+                    <div>
+                            <header class="header"><strong>SKILLS</strong></header>
+                    </div>
+                <div>
+                            <p class="margin"> 
+                                    <ul style="list-style-type:disc;">
+                                        <li><strong>Programming Languages: </strong>C, Java, Python, Basic Prolog</li>
+                                        <li><strong>Development Tools: </strong>Eclipse, JBoss Developer Studio, PyCharm</li>
+                                        <li><strong>Rules Engine: </strong>DROOLS</li>
+                                        <li><strong>Data Systems: </strong>Apache Kafka, PostgreSQL, Neo4j, MongoDB</li>
+                                        <li><strong>Operating Systems: </strong>Windows, Linux</li>
+                                        <li><strong>Version control systems: </strong>GIT, Maven</li>
+                                    </ul>
+                        </p>        
+                </div>
+            </div>
+            <button onclick="GoToTop()" id="TopBtn" title="Back to top">Top</button>
+            <script>
+                    var b1 = document.getElementById("TopBtn");
+                    window.onscroll = function() {
+                        scroll()
+                        };
+                    function scroll() {
+                      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) 
+                      {
+                        b1.style.display = "block";
+                      } 
+                      else 
+                      {
+                        b1.style.display = "none";
+                      }
+                    }
+                    function GoToTop() {
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }
+                    </script>       
+
+    <div class="container-fuid" id = "ContactInfo">
+    <footer class="page-footer footer font-small">
+    <div class="row">
+        <div class="col-sm">
+                <form class="form" action="mailto:vinaya.dbhat@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group" style="font-size: 20px;font-weight: 600">
+                            You can connect with me
+                        </div>                        
+                        <div class="form-group">
+                                <a href="mailto:vinaya.dbhat@gmail.com?"><img src="EmailLogo.png" height="20px" width="20px"></a> &nbsp;&nbsp;
+                                <a href="https://www.linkedin.com/in/vinaya-bhat/"><img src="LinkedIn_logo.png" style="width:20px; height:20px"></a> &nbsp;&nbsp;
+
+                        </div>
+                        <div class="form-group">
+                            © 2019 All rights reserved
+                        </div>
+                    </form>
+        </div>
+    </div>
+    </footer>
+</div>
+    </body> 
+</html>
